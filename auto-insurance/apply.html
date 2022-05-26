@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+<title> Auto Insurance Quote System</title>
+<link rel="stylesheet" href="assets/styles/bootstrapcss/bootstrap.css"/>
+<link rel="stylesheet" href="assets/plugins/css/mdb.css"/>
+<!--icons-->
+<link rel="stylesheet" href="assets/icons/fontawesome-free-5.7.2-web/css/brands.css"/>
+<link rel="stylesheet" href="assets/icons/fontawesome-free-5.7.2-web/css/solid.css"/>
+<link rel="stylesheet" href="assets/icons/fontawesome-free-5.7.2-web/css/fontawesome.css"/>
+<link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"/>
+<link rel="stylesheet" href="assets/styles/style.css"/>
+</head>
+
+<body>
+
+		<nav id="navbar logo" class="navbar navbar-expand-lg navbar-dark sticky-top navbar-default" >
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon "></span>
+	  </button>
+		  <a class="navbar-brand" href="#Home"><img src="assets/images/mcvt-1.png" class="mcvtlogo"></a>
+		  	
+	  <div  class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+				
+		  <ul class="nav navbar-nav" id="iconnav " >
+			  <li class="nav-item pb-0">
+				<button class="nav-link pb-0" href="#home"><a href="index.html">Home <span class="sr-only">(current)</span></a></button>
+			  </li>
+			  <li class="nav-item active pb-0">
+				  <button class="nav-link pb-0" href="#Servicez"><a href="#" class="scroll">Apply</a></button>
+			  </li>
+			  <li class="nav-item pb-0">
+				  <button class="nav-link pb-0" href="#Servicez"><a href="Claim.html" class="scroll">File a Claim</a></button>
+			  </li>
+			  <li class="nav-item pb-0">
+				  <button class="nav-link pb-0" href="#Servicez"><a href="About_us.html" class="scroll">About Us</a></button>
+			  </li>
+			</ul>
+		
+</nav>
+
+        </div>
+	  </div>
+	  
+        <!-- /#sidebar-wrapper -->
+	</nav>
+		
+
+
+	
+		
+		<div class="container1 register my-0">
+         
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <i id="bouncingcar" class="bouncingcar fas fa-car fa-4x animated bounce infinite" > </i>
+                        <h3>Welcome to MCVT!</h3>
+                        <p>Fill out the forms</p>
+                    </div>
+                    <div class="col-md-9 register-right">
+                             <form class="col-md-12 register-right" action="save.php" method="post">  
+                                              <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="register" role="tabpanel" aria-labelledby="home-tab">
+                                <h1 class="register-heading">Apply</h1>
+                               
+                                <div class="row register-form pb-0">
+                                  
+                    <div class="col-md-6">
+                      		
+                                        <div class="form-row">
+                                               <!--first name-->
+                                <div class="md-form md-outline col-md-10 mb-0">
+                                        <label for="client_fname">First Name <span class="red-text" title="This input is required">*</span></label>
+                                        <input type="text" maxlength="25" class="form-control" id="client_fname" length="25" name="client_fname" placeholder="" value="" autocomplete="off" required>
+                                        <div class="feedback">
+                                            First Name must not contain any numbers, symbols and contain 2 - 25 letters only.
+                                        </div>
+                                    </div><!--form column--> 
+                                    
+                                    
+                                <!--middle name-->
+                                    <div class="md-form md-outline col-md-10 mb-0">
+                                        <label for="client_mname">Middle Name</label>
+                                        <input type="text" maxlength="25" class="form-control" id="client_mname" name="client_mname" placeholder="" autocomplete="off" value="" >
+                                        <div class="feedback">
+                                                Middle Name must not contain any numbers, symbols and contain 1 - 25 letters only.
+                                        </div>
+                                    </div><!--form column-->     
+                    
+                                <!--last name-->
+                                    <div class="md-form md-outline col-md-10 mb-0">
+                                        <label for="client_lname">Last Name <span class="red-text" title="This input is required">*</span></label>
+                                        <input type="text" maxlength="25" class="form-control name25" id="client_lname" name="client_lname" placeholder="" value="" autocomplete="off" required>
+                                        <div class="feedback">
+                                                Last Name must not contain any numbers, symbols and contain 1 - 25 letters only.
+                                        </div>
+                                    </div><!--form column-->
+
+                                        </div>
+                                        
+                                        
+                                       <!--sex-->
+                            <div class="md-form md-outline col-md-10 px-0 mb-0">
+                                    <select id="client_sex" name="client_sex" class="w-100 browser-default custom-select mb-3" required>
+                                        <option disabled selected value="">Sex  <span class="red-text" title="This input is required">*</span></option>
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                    </select>
+                                </div><!--form column-->
+                </div>
+                <div class="col-md-6">
+                    <div class="form-row">
+                            <div class="md-form md-outline col-md-10 mb-0">
+                                    <label for="client_email">Email Address  <span class="red-text" title="This input is required">*</span></label>
+                                    <input type="text" class="form-control" id="client_email" name="client_email" placeholder="" value="" autocomplete="off" required>
+                                    <div class="feedback">
+                                        Email must be a valid address, e.g.(me@mydomain.com)
+                                    </div>
+                                </div><!--form column-->
+
+                         <!--date of birth-->
+                         <div class="md-form md-outline col-md-10 mb-0">
+                                <label for="client_date_of_birth">Date of Birth  <span class="red-text" title="This input is required">*</span></label>
+                                <input type="text" class="form-control" id="client_date_of_birth" name="client_date_of_birth" placeholder="" value="" autocomplete="off" required>
+                                <div class="valid-feedback">
+                                    <!--code for validation-->
+                                </div>
+                            </div><!--form column-->
+
+                               <!--profession-->
+                               <div class="md-form md-outline col-md-10 mb-0">
+                                    <label for="client_profession">Profession</label>
+                                    <input type="text" class="form-control" id="client_profession" name="client_profession" placeholder="" value="" autocomplete="off">
+                                    <div class="feedback">
+                                            Profession must not contain any numbers, symbols and contain 3 - 25 letters only.
+                                    </div>
+                                </div><!--form column-->
+    
+                             <!--address-->
+                             <div class="md-form md-outline col-md-10 mb-0">
+                                    <label for="client_address">Address <span class="red-text" title="This input is required">*</span></label>
+                                    <textarea class="form-control" maxlength="200" id="client_address" name="client_address" autocomplete="off"  placeholder="" value="" required>  
+                                    </textarea>
+                                    <span class="pull-right label label-default" id="count_message"></span>
+                                    <div class="feedback">
+                                            <!--Address must not contain any symbols and contain up to 200 letters only.-->
+                                    </div>
+                                </div><!--form column-->
+                         </div>                  
+                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-row">
+                                               <!--chassis number-->
+                                     <div class="md-form md-outline col-md-10 mb-0">
+                                            <label for="client_chassis_no">Chassis Number <span class="red-text" title="This input is required">*</span></label>
+                                            <input type="text" maxlength="25" class="text-uppercase form-control name25" id="client_chassis_no" name="client_chassis_no" placeholder="" value="" autocomplete="off" required>
+                                            <div class="feedback">
+                                                    Chassis Number must contain up to 11 alphanumeric only.
+                                            </div>
+                                        </div><!--form column-->
+                        
+                                    <!--body-->
+                                    <div class="md-form md-outline col-md-10 mb-0">
+                                            <select name="client_body" id="client_body" class="form-control browser-default custom-select mb-3" required onblur="body_weight()">
+                                            	<option value="" selected disabled>Body <span class="red-text">*</span></option>
+                                            	<option value="UV">UV</option>
+                                            	<option value="Motorcycle">Motorcycle</option>
+                                            	<option value="Tricycle">Tricycle</option>
+                                            	<option value="Car">Car</option>
+                                            	<option value="Trailer">Trailer</option>
+                                            	<option value="Truck">Truck</option>
+                                            	<option value="Bus">Bus</option>
+                                            </select>
+                                        </div><!--form column-->
+
+                                           <!--engine number-->
+                                           <div class="md-form md-outline col-md-10 mb-0">
+                                                <label for="client_engine_no">Engine Number <span class="red-text" title="This input is required">*</span></label>
+                                                <input type="text" maxlength="25" class="form-control name25" id="client_engine_no" name="client_engine_no" placeholder="" value="" autocomplete="off" required>
+                                                <div class="feedback">
+                                                    Engine Number must contain 10 alphanumeric only.
+                                                </div>
+                                            </div><!--form column-->
+                            
+                                        <!--Color-->
+                                        <div class="md-form md-outline col-md-10 mb-0">
+                                                <label for="client_color">Color <span class="red-text" title="This input is required">*</span></label>
+                                                <input type="text" class="form-control" id="client_color" name="client_color" placeholder="" value="" autocomplete="off" required>
+                                                <div class="valid-feedback">
+                                                    <!--code for validation-->
+                                                </div>
+                                            </div><!--form column-->
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                            <div class="form-row">                    
+                                                    <!--Plate Number-->
+                                                       <div class="md-form md-outline col-md-10 mb-0">
+                                                               <label for="client_plate_no">Plate Number  <span class="red-text" title="This input is required">*</span></label>
+                                                               <input type="text" class="form-control" id="client_plate_no" name="client_plate_no" placeholder="" value="" autocomplete="off" required>
+                                                               <div class="feedback">
+                                                                   Plate Number must be in the format of: 2 -3 Letters(space)3 - 4 Numbers eg. (LTO 1234) 
+                                                               </div>
+                                                           </div><!--form column-->
+                           
+                                                   <!--Brand Name-->
+                                                       <div class="md-form md-outline col-md-10 mb-0">
+                                                               <label for="client_brand">Brand Name  <span class="red-text" title="This input is required">*</span></label>
+                                                               <input type="text" class="form-control" id="client_brand" name="client_brand" placeholder="" value="" autocomplete="off" required>
+                                                               <div class="feedback">
+                                                                   Brand Name must not contain a symbol.
+                                                               </div>
+                                                           </div><!--form column-->
+                                                   <div class="form-row">
+                                                       <div class="col-md-6">
+                                                           <!--Authorized Capacity-->
+                                                       <div class="md-form md-outline mb-0">
+                                                               <label for="client_authorized_capacity">Authorized Capacity <span class="red-text" title="This input is required">*</span></label>
+                                                               <input type="text" class="form-control ml-1" id="client_authorized_capacity" name="client_authorized_capacity" placeholder="" value="" autocomplete="off" required>
+                                                               <div class="feedback">
+                                                                   Authorized Capacity must be a number only.
+                                                               </div>
+                                                           </div><!--form column-->
+                                                       
+                                                       </div><!--col-md-6-->
+                                                       <div class="col-md-5">
+                                                           <!--Unladen Weight-->
+                                                       <div class="md-form md-outline mb-0">
+                                                               <label for="client_unladen_weight">Unladen Weight (kg) <span class="red-text" title="This input is required">*</span></label>
+                                                               <input onBlur="body_weight()" type="text" class="form-control" id="client_unladen_weight" name="client_unladen_weight" placeholder="" value="" autocomplete="off" required="true">
+                                                               <div class="feedback">
+                                                                    Unladen Weight must be a number only.
+                                                               </div>
+                                                           </div><!--form column-->
+                                                           
+                                                       </div><!--col-md-6-->
+                                                    
+
+                                                   </div><!--form row--> 
+                                         <!--Total Price-->
+                                <div class="md-form md-outline col-md-10 mb-0">
+                                        <label for="client_total_price">Total Price</label>
+                                        <input readonly type="text" class="form-control" id="client_total_price" name="client_total_price" placeholder=" " value=" " autocomplete="off" required>
+                                    </div><!--form column-->
+												     
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 d-flex justify-content-center pb-3">
+                                        <input type="submit" name="save_client_client" class="btnRegister" style="background: #e44d26"  value="Register"/>
+                                </div>
+                            </div>
+							
+                            
+                            
+                        </div>
+                    </div>
+						</form>
+                </div>
+			</div>
+</div>
+
+
+<footer>
+		  <div class="footer">
+        <div class="container">
+            
+            <div class="row ">
+                <!-- footer-about -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title"><img src="assets/images/mcvt-1.png" style="width: 200px;"><hr></div>
+                        <ul class="list-unstyled">
+                           <li><h4>Cristina Tanyag</h4></li>
+                            <li>0918 579 3688</li>
+                            <li>(02) 941 2625</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-about -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title" >Menu </div>
+                        <ul class="list-unstyled" style="color: black">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Apply.html">Apply</a></li>
+                            <li><a href="Claim.html">File a Claim</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-links -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title">Share us on Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Protection for Life’s Downs. More care, less cost. Tension, while You drive, can get over, because v give u an interesting insurance cover. Give you peace of mind, for wherever the road takes you." data-url="https://mcvt.000webhostapp.com/ims" data-hashtags="BestAutoInsurance #Elective #ExplodingKitty" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+                            <li><div class="fb-share-button" data-href="https://mcvt.000webhostapp.com/ims" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmcvt.000webhostapp.com%2Fims&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-links -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <h1 class="footer-title">Claim?</h1>
+                        <form>
+                            <div class="newsletter-form">
+                                <button class="btn btn-default btn-lg white-text" type="submit"><a class="white-text" href="Claim.html">Go</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                  <!-- /.footer-links -->
+                <!-- tiny-footer -->
+            </div>
+            <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
+                    <div class="tiny-footer">
+                        <p>Copyright © All Rights Reserved 2019 |  <a href="https://i.pinimg.com/originals/81/6d/a5/816da533638aee63cfbd315ea24cccbd.jpg" target="_blank" class="copyrightlink">KITTY</a></p>
+                    </div>
+                </div>
+                <!-- /. tiny-footer -->
+            </div>
+        </div>
+    </div>
+</footer>
+		<!-- /footer -->
+</body>
+
+
+<script src="assets/scripts/jqueryjs/jquery.js"></script>
+<script src="assets/scripts/popperjs/popper.js"></script>
+<script src="assets/scripts/boostrapjs/bootstrap.js"></script>
+<script src="assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<script src="assets/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
+<script src="assets/plugins/js/mdb.js"></script>
+<script src="assets/scripts/script/validation.js"></script>
+<script src="assets/scripts/script/script.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	 // Date Picker
+     jQuery('#client_date_of_birth').datepicker();
+            jQuery('client_date_of_birth').datepicker({
+                autoclose: true,
+                todayHighlight: true,
+				maxDate: new Date,
+				minDate: new Date(1900, 1, 1)
+            });
+</script>
+
+</html>
